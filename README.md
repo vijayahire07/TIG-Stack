@@ -5,3 +5,7 @@ simply download the docker-compose file and fire up the TIG stack and your Syslo
 On rsyslog.conf forward all logs to TIG stack UDP port 6514.
 
 
+after firing up Stack initial telegraf.conf file will be created in the current directory. edit the below configuration as below.
+
+[[inputs.syslog]]
+server = "udp://:6514"
