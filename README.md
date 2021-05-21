@@ -14,3 +14,5 @@ on the telegraf.conf uncomment these lines to receive logs from log server.
 [[inputs.syslog]]
 
 server = "udp://:6514"
+
+Finally import Dashboard 12433 on grafana .
