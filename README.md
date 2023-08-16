@@ -22,4 +22,9 @@ fire up the docker containers by running below command.
 ```
 docker-compose up -d
 ```
+add datasourse using influxdb. 
+use HTTP URL as : "http://influxdb:8086"
+database name   : telegraf
+
+
 Finally import Dashboard 12433 on grafana .
