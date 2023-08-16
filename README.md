@@ -18,15 +18,8 @@ Note : Before firing docker-compose up -d run below command to generate sample c
 ```buildoutcfg
 mkdir -p /volumes/influxdb
 ```
-
-```buildoutcfg
-docker run --rm telegraf telegraf config > telegraf.conf
+fire up the docker containers by running below command.
 ```
-
-on the telegraf.conf uncomment these lines to receive logs from log server.
-```
-[[inputs.syslog]]
-
-server = "udp://:6514"
+docker-compose up -d
 ```
 Finally import Dashboard 12433 on grafana .
