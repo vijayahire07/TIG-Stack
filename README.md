@@ -29,5 +29,5 @@ On rsyslog.conf forward all logs to TIG stack UDP port 6514.
 
 vim /etc/rsyslog.d/70-TIG-stack.conf
 ```buildoutcfg
-*.*             @(o)xx.xx.xx.xx:6514;RSYSLOG_SyslogProtocol23Format
+*.*;sshd,auth,crond.*,authpriv.none             @(o)xx.xx.xx.xx:6514;RSYSLOG_SyslogProtocol23Format
 ```
